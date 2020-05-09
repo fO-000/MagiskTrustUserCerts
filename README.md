@@ -12,6 +12,9 @@ This module makes all installed user certificates part of the system certificate
 5. Reboot *twice* (First one will copy certificates to module, second reboot mounts them in the correct location)
 6. The installed user certificates can now be found in the system store.
 
+### Removing certificates
+Certificates are stored in `/data/adb/modules/trustusercerts/system/etc/security/cacerts`. You can remove them from the directory and reboot to remove them.
+
 ### Changelog
 #### v0.4.1
 * Supports Android 10
