@@ -9,11 +9,11 @@ This module makes all installed user certificates part of the system certificate
 2. Zip files `zip -r AlwaysTrustUserCerts.zip ./*` or download zip from releases
 3. Install in Magisk
 4. Install client certificates through [normal flow](https://support.portswigger.net/customer/portal/articles/1841102-installing-burp-s-ca-certificate-in-an-android-device)
-5. Reboot
+5. Reboot *twice* (First one will copy certificates to module, second reboot mounts them in the correct location)
 6. The installed user certificates can now be found in the system store.
 
 ### Changelog
-#### v0.4
+#### v0.4.1
 * Supports Android 10
 * Updated Module to be compatible with latest Magisk module template (v20.3+)
 
